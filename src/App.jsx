@@ -1,103 +1,111 @@
-import React, { useState, useEffect } from 'react'
-import Navbar from './components/Navbar'
-import SearchHero from './components/SearchHero'
-import HotelListings from './components/HotelListings'
-import FilterSidebar from './components/FilterSidebar'
-import LoginModal from './components/LoginModal'
-import Pagination from './components/Pagination'
-import Footer from './components/Footer'
-import { ThemeProvider } from './components/ThemeProvider'
+import React, { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import SearchHero from "./components/SearchHero";
+import HotelListings from "./components/HotelListings";
+import FilterSidebar from "./components/FilterSidebar";
+import LoginModal from "./components/LoginModal";
+import HotelDetailsModal from "./components/HotelDetailsModal";
+import BookingModal from "./components/BookingModal";
+import Pagination from "./components/Pagination";
+import Footer from "./components/Footer";
+import { ThemeProvider } from "./components/ThemeProvider";
+import { getHotelById } from "./data/hotels";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home')
-  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
-  const [isFilterSidebarOpen, setIsFilterSidebarOpen] = useState(false)
-  const [user, setUser] = useState(null)
-  const [favorites, setFavorites] = useState([])
-  const [searchQuery, setSearchQuery] = useState({ location: '' })
+  const [currentPage, setCurrentPage] = useState("home");
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  const [isHotelDetailsModalOpen, setIsHotelDetailsModalOpen] = useState(false);
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+  const [selectedHotel, setSelectedHotel] = useState(null);
+  const [isFilterSidebarOpen, setIsFilterSidebarOpen] = useState(false);
+  const [user, setUser] = useState(null);
+  const [favorites, setFavorites] = useState([]);
+  const [searchQuery, setSearchQuery] = useState({ location: "" });
   const [filters, setFilters] = useState({
     priceRange: [0, 10000],
     starRating: [],
     roomTypes: [],
     amenities: [],
-  })
-  const [currentPageNum, setCurrentPageNum] = useState(1)
+  });
+  const [currentPageNum, setCurrentPageNum] = useState(1);
 
   useEffect(() => {
     // Load user from localStorage on app start
-    const savedUser = localStorage.getItem('user')
-    const savedFavorites = localStorage.getItem('favorites')
-    
+    const savedUser = localStorage.getItem("user");
+    const savedFavorites = localStorage.getItem("favorites");
+
     if (savedUser) {
-      setUser(JSON.parse(savedUser))
+      setUser(JSON.parse(savedUser));
     }
-    
+
     if (savedFavorites) {
-      setFavorites(JSON.parse(savedFavorites))
+      setFavorites(JSON.parse(savedFavorites));
     }
-  }, [])
+  }, []);
 
   const handleLogin = (userData) => {
-    setUser(userData)
-    localStorage.setItem('user', JSON.stringify(userData))
-    setIsLoginModalOpen(false)
-  }
+    setUser(userData);
+    localStorage.setItem("user", JSON.stringify(userData));
+    setIsLoginModalOpen(false);
+  };
 
   const handleLogout = () => {
-    setUser(null)
-    setFavorites([])
-    localStorage.removeItem('user')
-    localStorage.removeItem('favorites')
-  }
+    setUser(null);
+    setFavorites([]);
+    localStorage.removeItem("user");
+    localStorage.removeItem("favorites");
+  };
 
   const handleNavigation = (pageId) => {
-    setCurrentPage(pageId)
-    setCurrentPageNum(1)
-  }
+    setCurrentPage(pageId);
+    setCurrentPageNum(1);
+  };
 
   const handleSearch = (searchData) => {
-    setSearchQuery(searchData)
-    setCurrentPage('hotels')
-    setCurrentPageNum(1)
-  }
+    setSearchQuery(searchData);
+    setCurrentPage("hotels");
+    setCurrentPageNum(1);
+  };
 
   const handleToggleFavorite = (hotelId) => {
-    if (!user) return
+    if (!user) return;
 
-    let newFavorites
+    let newFavorites;
     if (favorites.includes(hotelId)) {
-      newFavorites = favorites.filter(id => id !== hotelId)
+      newFavorites = favorites.filter((id) => id !== hotelId);
     } else {
-      newFavorites = [...favorites, hotelId]
+      newFavorites = [...favorites, hotelId];
     }
-    
-    setFavorites(newFavorites)
-    localStorage.setItem('favorites', JSON.stringify(newFavorites))
-  }
+
+    setFavorites(newFavorites);
+    localStorage.setItem("favorites", JSON.stringify(newFavorites));
+  };
 
   const handleViewDetails = (hotelId) => {
-    // In a real app, this would navigate to hotel details page
-    console.log('View details for hotel:', hotelId)
-  }
+    const hotel = getHotelById(hotelId);
+    if (hotel) {
+      setSelectedHotel(hotel);
+      setIsHotelDetailsModalOpen(true);
+    }
+  };
 
   const handleBookNow = (hotel) => {
     if (!user) {
-      setIsLoginModalOpen(true)
-      return
+      setIsLoginModalOpen(true);
+      return;
     }
-    
-    // In a real app, this would navigate to booking page
-    console.log('Book hotel:', hotel)
-    alert(`Booking initiated for ${hotel.name}`)
-  }
+
+    setSelectedHotel(hotel);
+    setIsBookingModalOpen(true);
+  };
 
   const handleDashboard = () => {
-    setCurrentPage('dashboard')
-  }
+    setCurrentPage("dashboard");
+  };
 
   const renderCurrentPage = () => {
     switch (currentPage) {
-      case 'home':
+      case "home":
         return (
           <div className="min-h-screen">
             <SearchHero onSearch={handleSearch} />
@@ -136,9 +144,9 @@ function App() {
               </div>
             </div>
           </div>
-        )
-      
-      case 'hotels':
+        );
+
+      case "hotels":
         return (
           <div className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-4">
             <div className="container mx-auto px-4">
@@ -173,9 +181,9 @@ function App() {
               </div>
             </div>
           </div>
-        )
-      
-      case 'about':
+        );
+
+      case "about":
         return (
           <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-16">
             <div className="container mx-auto px-4">
@@ -185,41 +193,55 @@ function App() {
                 </h1>
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
                   <p className="text-gray-600 dark:text-gray-300 text-lg mb-6">
-                    Staycation is your trusted partner for finding the perfect accommodation across Maharashtra. 
-                    We specialize in connecting travelers with exceptional hotels, from luxury resorts to 
-                    budget-friendly stays.
+                    Staycation is your trusted partner for finding the perfect
+                    accommodation across Maharashtra. We specialize in
+                    connecting travelers with exceptional hotels, from luxury
+                    resorts to budget-friendly stays.
                   </p>
                   <p className="text-gray-600 dark:text-gray-300 text-lg mb-6">
-                    Our platform offers a curated selection of hotels in major cities like Mumbai, Pune, 
-                    Nagpur, and scenic destinations like Lonavala and Mahabaleshwar.
+                    Our platform offers a curated selection of hotels in major
+                    cities like Mumbai, Pune, Nagpur, and scenic destinations
+                    like Lonavala and Mahabaleshwar.
                   </p>
                   <div className="grid md:grid-cols-3 gap-6 mt-8">
                     <div className="text-center">
                       <div className="bg-red-100 dark:bg-red-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span className="text-red-600 dark:text-red-400 text-2xl font-bold">1000+</span>
+                        <span className="text-red-600 dark:text-red-400 text-2xl font-bold">
+                          1000+
+                        </span>
                       </div>
-                      <h3 className="font-semibold text-gray-900 dark:text-white">Hotels</h3>
+                      <h3 className="font-semibold text-gray-900 dark:text-white">
+                        Hotels
+                      </h3>
                     </div>
                     <div className="text-center">
                       <div className="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span className="text-blue-600 dark:text-blue-400 text-2xl font-bold">50K+</span>
+                        <span className="text-blue-600 dark:text-blue-400 text-2xl font-bold">
+                          50K+
+                        </span>
                       </div>
-                      <h3 className="font-semibold text-gray-900 dark:text-white">Happy Customers</h3>
+                      <h3 className="font-semibold text-gray-900 dark:text-white">
+                        Happy Customers
+                      </h3>
                     </div>
                     <div className="text-center">
                       <div className="bg-green-100 dark:bg-green-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span className="text-green-600 dark:text-green-400 text-2xl font-bold">25+</span>
+                        <span className="text-green-600 dark:text-green-400 text-2xl font-bold">
+                          25+
+                        </span>
                       </div>
-                      <h3 className="font-semibold text-gray-900 dark:text-white">Cities</h3>
+                      <h3 className="font-semibold text-gray-900 dark:text-white">
+                        Cities
+                      </h3>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        )
-      
-      case 'contact':
+        );
+
+      case "contact":
         return (
           <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-16">
             <div className="container mx-auto px-4">
@@ -270,9 +292,9 @@ function App() {
               </div>
             </div>
           </div>
-        )
-      
-      case 'dashboard':
+        );
+
+      case "dashboard":
         return (
           <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
             <div className="container mx-auto px-4">
@@ -284,29 +306,35 @@ function App() {
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                     My Bookings
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300">0 upcoming bookings</p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    0 upcoming bookings
+                  </p>
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                     Favorites
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300">{favorites.length} saved hotels</p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    {favorites.length} saved hotels
+                  </p>
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                     Profile
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300">Manage your account</p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Manage your account
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        )
-      
+        );
+
       default:
-        return null
+        return null;
     }
-  }
+  };
 
   return (
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
@@ -319,19 +347,36 @@ function App() {
           onLogout={handleLogout}
           onDashboard={handleDashboard}
         />
-        
+
         {renderCurrentPage()}
-        
+
         <Footer />
-        
+
         <LoginModal
           isOpen={isLoginModalOpen}
           onClose={() => setIsLoginModalOpen(false)}
           onLogin={handleLogin}
         />
+
+        <HotelDetailsModal
+          isOpen={isHotelDetailsModalOpen}
+          onClose={() => setIsHotelDetailsModalOpen(false)}
+          hotel={selectedHotel}
+          user={user}
+          favorites={favorites}
+          onToggleFavorite={handleToggleFavorite}
+          onBookNow={handleBookNow}
+        />
+
+        <BookingModal
+          isOpen={isBookingModalOpen}
+          onClose={() => setIsBookingModalOpen(false)}
+          hotel={selectedHotel}
+          user={user}
+        />
       </div>
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;

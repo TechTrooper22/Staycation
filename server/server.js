@@ -116,44 +116,44 @@ userSchema.index({ email: 1 }, { unique: true });
 
 const User = mongoose.model("User", userSchema);
 
-// Hotel Schema (for storing additional hotel data)
-const hotelSchema = new mongoose.Schema(
-  {
-    hotelId: {
-      type: Number,
-      required: true,
-      unique: true,
-    },
-    name: {
-      type: String,
-      required: true,
-    },
-    location: String,
-    city: String,
-    rating: Number,
-    price: Number,
-    image: String,
-    roomTypes: [String],
-    amenities: [String],
-    description: String,
-    reviews: [
-      {
-        user: String,
-        rating: Number,
-        comment: String,
-        date: {
-          type: Date,
-          default: Date.now,
-        },
-      },
-    ],
-  },
-  {
-    timestamps: true,
-  }
-);
+// // Hotel Schema (for storing additional hotel data)
+// const hotelSchema = new mongoose.Schema(
+//   {
+//     hotelId: {
+//       type: Number,
+//       required: true,
+//       unique: true,
+//     },
+//     name: {
+//       type: String,
+//       required: true,
+//     },
+//     location: String,
+//     city: String,
+//     rating: Number,
+//     price: Number,
+//     image: String,
+//     roomTypes: [String],
+//     amenities: [String],
+//     description: String,
+//     reviews: [
+//       {
+//         user: String,
+//         rating: Number,
+//         comment: String,
+//         date: {
+//           type: Date,
+//           default: Date.now,
+//         },
+//       },
+//     ],
+//   },
+//   {
+//     timestamps: true,
+//   }
+// );
 
-const Hotel = mongoose.model("Hotel", hotelSchema);
+// const Hotel = mongoose.model("Hotel", hotelSchema);
 
 // Middleware to verify JWT token
 const authenticateToken = (req, res, next) => {
@@ -176,8 +176,6 @@ const authenticateToken = (req, res, next) => {
     }
   );
 };
-
-// Routes
 
 // User Registration
 app.post("/api/auth/register", async (req, res) => {

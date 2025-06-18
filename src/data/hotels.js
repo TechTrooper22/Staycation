@@ -17,9 +17,17 @@ export const maharashtraHotels = [
       "https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg",
     ],
     roomTypes: ["Deluxe", "Suite", "Presidential"],
-    amenities: ["wifi", "pool", "gym", "restaurant", "parking", "spa", "concierge"],
+    amenities: [
+      "wifi",
+      "pool",
+      "gym",
+      "restaurant",
+      "parking",
+      "spa",
+      "concierge",
+    ],
     description:
-      "An iconic luxury hotel overlooking the Gateway of India and Arabian Sea. Experience timeless elegance and world-class hospitality.",
+      "An iconic luxury hotel overlooking the Gateway of India and Arabian Sea. This legendary palace hotel has been the epitome of Indian hospitality since 1903, featuring opulent rooms with stunning harbor views, world-class dining at multiple award-winning restaurants, and unparalleled service. The hotel seamlessly blends Moorish, Oriental and Florentine architectural styles, creating a truly majestic experience. Guests enjoy access to the exclusive Jiva Spa, multiple swimming pools, and personalized butler service in suites.",
     address: "Apollo Bunder, Colaba, Mumbai, Maharashtra 400001",
     phone: "+91 22 6665 3366",
     email: "contact@tajmahalpalace.com",
@@ -41,7 +49,8 @@ export const maharashtraHotels = [
       {
         user: "Priya Patel",
         rating: 5,
-        comment: "The heritage and luxury combined perfectly. Highly recommended!",
+        comment:
+          "The heritage and luxury combined perfectly. Highly recommended!",
         date: "2024-01-10",
       },
     ],
@@ -61,13 +70,18 @@ export const maharashtraHotels = [
     ],
     roomTypes: ["Deluxe", "Suite"],
     amenities: ["wifi", "pool", "gym", "restaurant", "parking", "spa"],
-    description: "Contemporary luxury hotel in the heart of Mumbai's business district with panoramic city views.",
+    description:
+      "Contemporary luxury hotel in the heart of Mumbai's business district with panoramic city and ocean views. Located on Marine Drive, this sophisticated property offers elegantly appointed rooms and suites with floor-to-ceiling windows showcasing breathtaking vistas of the Arabian Sea. The hotel features award-winning restaurants serving international and Indian cuisine, a state-of-the-art fitness center, and The Oberoi Spa offering traditional and contemporary wellness treatments. Business travelers appreciate the fully equipped business center and meeting facilities.",
     address: "Nariman Point, Mumbai, Maharashtra 400021",
     phone: "+91 22 6632 5757",
     email: "contact@oberoimumbai.com",
     checkIn: "2:00 PM",
     checkOut: "12:00 PM",
-    policies: ["Free cancellation up to 48 hours", "Non-smoking property", "Children under 12 stay free"],
+    policies: [
+      "Free cancellation up to 48 hours",
+      "Non-smoking property",
+      "Children under 12 stay free",
+    ],
     reviews: [
       {
         user: "Amit Kumar",
@@ -85,16 +99,23 @@ export const maharashtraHotels = [
     rating: 5,
     price: 8500,
     image: "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg",
-    images: ["https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg", "https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg",
+      "https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg",
+    ],
     roomTypes: ["Deluxe", "Executive", "Suite"],
     amenities: ["wifi", "gym", "restaurant", "parking", "spa", "conference"],
-    description: "A luxurious business hotel in Parel with state-of-the-art facilities and world-class dining.",
+    description:
+      "A luxurious business hotel in Parel with state-of-the-art facilities and world-class dining. This contemporary property combines modern luxury with traditional Indian hospitality, featuring spacious rooms with cutting-edge technology and elegant furnishings. The hotel houses multiple specialty restaurants including authentic Indian, Pan-Asian, and international cuisines. The Kaya Kalp Spa offers rejuvenating treatments, while the fitness center and outdoor pool provide recreation options. Extensive conference and banquet facilities make it ideal for business events and celebrations.",
     address: "Parel, Mumbai, Maharashtra 400012",
     phone: "+91 22 2410 1010",
     email: "itcgrandcentral@itchotels.in",
     checkIn: "3:00 PM",
     checkOut: "11:00 AM",
-    policies: ["Free cancellation within 24 hours", "Business center available 24/7"],
+    policies: [
+      "Free cancellation within 24 hours",
+      "Business center available 24/7",
+    ],
     reviews: [],
   },
   {
@@ -105,16 +126,23 @@ export const maharashtraHotels = [
     rating: 4,
     price: 6500,
     image: "https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg",
-    images: ["https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg", "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg",
+      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg",
+    ],
     roomTypes: ["Standard", "Deluxe", "Suite"],
     amenities: ["wifi", "restaurant", "parking", "gym"],
-    description: "A heritage property on Marine Drive offering spectacular views of the Queen's Necklace.",
+    description:
+      "A heritage property on Marine Drive offering spectacular views of the Queen's Necklace. This charming hotel captures the essence of old-world Mumbai with its Art Deco architecture and vintage charm, while providing modern amenities and comfort. Rooms feature classic décor with contemporary touches, and many offer stunning views of the Arabian Sea and the famous Marine Drive promenade. The hotel's restaurant serves delicious Indian and continental cuisine, and its prime location makes it perfect for exploring South Mumbai's attractions including the Gateway of India and Colaba Causeway.",
     address: "Marine Drive, Mumbai, Maharashtra 400020",
     phone: "+91 22 2285 1212",
     email: "reservations@hotelmarineplaza.com",
     checkIn: "2:00 PM",
     checkOut: "12:00 PM",
-    policies: ["Flexible cancellation policy", "Complimentary breakfast included"],
+    policies: [
+      "Flexible cancellation policy",
+      "Complimentary breakfast included",
+    ],
     reviews: [],
   },
   {
@@ -125,16 +153,23 @@ export const maharashtraHotels = [
     rating: 5,
     price: 11000,
     image: "https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg",
-    images: ["https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg", "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg",
+      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg",
+    ],
     roomTypes: ["Deluxe", "Club", "Suite"],
     amenities: ["wifi", "pool", "gym", "restaurant", "parking", "spa"],
-    description: "Modern luxury hotel near the airport with world-class amenities and impeccable service.",
+    description:
+      "Modern luxury hotel near the airport with world-class amenities and impeccable service. This contemporary palace seamlessly blends royal Indian hospitality with modern luxury, featuring elegantly designed rooms and suites with marble bathrooms and premium amenities. The hotel boasts multiple dining venues including fine-dining restaurants, a rooftop bar, and specialty cafes. The Spa by ESPA offers holistic wellness treatments, while the temperature-controlled outdoor pool and state-of-the-art fitness center provide relaxation and recreation. Its proximity to the international airport makes it ideal for business and leisure travelers.",
     address: "Andheri Kurla Road, Mumbai, Maharashtra 400059",
     phone: "+91 22 6691 1234",
     email: "reservations.mumbai@theleela.com",
     checkIn: "3:00 PM",
     checkOut: "12:00 PM",
-    policies: ["24-hour cancellation policy", "Airport shuttle service available"],
+    policies: [
+      "24-hour cancellation policy",
+      "Airport shuttle service available",
+    ],
     reviews: [],
   },
   {
@@ -145,16 +180,23 @@ export const maharashtraHotels = [
     rating: 4,
     price: 7500,
     image: "https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg",
-    images: ["https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg", "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg",
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg",
+    ],
     roomTypes: ["Superior", "Executive", "Suite"],
     amenities: ["wifi", "pool", "gym", "restaurant", "parking"],
-    description: "Beachfront hotel offering direct access to Juhu Beach with modern amenities.",
+    description:
+      "Beachfront hotel offering direct access to Juhu Beach with modern amenities and vibrant atmosphere. This contemporary property provides a perfect beach getaway within the city, featuring spacious rooms with modern furnishings and many offering stunning ocean views. Guests can enjoy direct beach access, multiple dining options including beachside restaurants, and recreational facilities. The hotel's outdoor pool, fitness center, and spa services ensure a relaxing stay. Its location in Juhu makes it convenient for exploring Mumbai's film city and enjoying the city's famous street food scene along the beach.",
     address: "Juhu Beach, Mumbai, Maharashtra 400049",
     phone: "+91 22 6693 4444",
     email: "h1640@accor.com",
     checkIn: "3:00 PM",
     checkOut: "12:00 PM",
-    policies: ["Free cancellation up to 6 PM on arrival date", "Pet-friendly rooms available"],
+    policies: [
+      "Free cancellation up to 6 PM on arrival date",
+      "Pet-friendly rooms available",
+    ],
     reviews: [],
   },
   {
@@ -165,16 +207,22 @@ export const maharashtraHotels = [
     rating: 3,
     price: 3500,
     image: "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg",
-    images: ["https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg",
+    ],
     roomTypes: ["Standard", "Deluxe"],
     amenities: ["wifi", "restaurant", "parking"],
-    description: "Budget-friendly hotel near Mumbai Central Railway Station with basic amenities.",
+    description:
+      "Budget-friendly hotel near Mumbai Central Railway Station with essential amenities and convenient location. This practical accommodation offers clean, comfortable rooms with modern amenities at affordable rates, making it perfect for budget-conscious travelers and business visitors. The hotel features a multi-cuisine restaurant serving Indian and continental dishes, and its strategic location provides easy access to Mumbai's major business districts, shopping areas, and tourist attractions. The friendly staff ensures a pleasant stay while maintaining excellent value for money.",
     address: "Grant Road, Mumbai, Maharashtra 400007",
     phone: "+91 22 2308 4747",
     email: "info@hotelsahil.com",
     checkIn: "12:00 PM",
     checkOut: "11:00 AM",
-    policies: ["Non-refundable bookings", "Early check-in subject to availability"],
+    policies: [
+      "Non-refundable bookings",
+      "Early check-in subject to availability",
+    ],
     reviews: [],
   },
   {
@@ -185,10 +233,14 @@ export const maharashtraHotels = [
     rating: 4,
     price: 5500,
     image: "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg",
-    images: ["https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg", "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg",
+      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg",
+    ],
     roomTypes: ["Standard", "Premium"],
     amenities: ["wifi", "restaurant", "gym", "parking"],
-    description: "Boutique hotel in Colaba with contemporary design and personalized service.",
+    description:
+      "Boutique hotel in Colaba with contemporary design and personalized service in the heart of South Mumbai. This stylish property combines modern aesthetics with warm hospitality, featuring uniquely designed rooms with contemporary furnishings and artistic touches. Located in the vibrant Colaba district, guests are within walking distance of the Gateway of India, Taj Mahal Palace, and numerous shopping and dining options. The hotel's restaurant offers innovative cuisine, while the rooftop area provides a perfect spot to unwind. The personalized service and attention to detail make every stay memorable.",
     address: "Battery Street, Colaba, Mumbai, Maharashtra 400001",
     phone: "+91 22 2287 1122",
     email: "reservations@gordonhousehotel.com",
@@ -207,10 +259,14 @@ export const maharashtraHotels = [
     rating: 5,
     price: 9500,
     image: "https://images.pexels.com/photos/3201761/pexels-photo-3201761.jpeg",
-    images: ["https://images.pexels.com/photos/3201761/pexels-photo-3201761.jpeg", "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/3201761/pexels-photo-3201761.jpeg",
+      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg",
+    ],
     roomTypes: ["Deluxe", "Executive", "Suite"],
     amenities: ["wifi", "pool", "gym", "restaurant", "parking", "spa"],
-    description: "Luxury hotel in the heart of Koregaon Park with world-class facilities and dining.",
+    description:
+      "Luxury hotel in the heart of Koregaon Park with world-class facilities and exceptional dining experiences. This sophisticated property embodies the Westin brand's commitment to well-being, featuring the signature Heavenly Bed and Heavenly Bath in every room. Located in Pune's most happening neighborhood, the hotel offers easy access to trendy restaurants, bars, and shopping areas. The WestinWORKOUT fitness studio, Heavenly Spa, and outdoor pool provide wellness options, while multiple dining venues serve everything from authentic Indian cuisine to international favorites. The hotel's contemporary design and warm service create an oasis of tranquility.",
     address: "Koregaon Park, Pune, Maharashtra 411001",
     phone: "+91 20 6730 6730",
     email: "reservations.pune@westin.com",
@@ -227,16 +283,23 @@ export const maharashtraHotels = [
     rating: 5,
     price: 8800,
     image: "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg",
-    images: ["https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg", "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg",
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg",
+    ],
     roomTypes: ["Deluxe", "Executive", "Suite"],
     amenities: ["wifi", "pool", "gym", "restaurant", "parking", "spa"],
-    description: "Premium business hotel offering sophisticated accommodations and exceptional service.",
+    description:
+      "Premium business hotel offering sophisticated accommodations and exceptional service in Pune's business district. This elegant property features spacious rooms and suites with contemporary décor, marble bathrooms, and state-of-the-art technology. The hotel houses multiple award-winning restaurants, including specialty cuisines and innovative cocktail bars. The Quan Spa offers rejuvenating treatments, while the fitness center and outdoor pool provide recreation. Extensive meeting and event spaces, along with personalized service, make it ideal for both business and leisure travelers seeking luxury and convenience.",
     address: "Senapati Bapat Road, Pune, Maharashtra 411053",
     phone: "+91 20 6683 3333",
     email: "mhrs.pnwjw.reservations@marriott.com",
     checkIn: "3:00 PM",
     checkOut: "12:00 PM",
-    policies: ["24-hour cancellation policy", "Executive lounge access available"],
+    policies: [
+      "24-hour cancellation policy",
+      "Executive lounge access available",
+    ],
     reviews: [],
   },
   {
@@ -247,10 +310,13 @@ export const maharashtraHotels = [
     rating: 5,
     price: 7800,
     image: "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg",
-    images: ["https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg",
+    ],
     roomTypes: ["King Room", "Executive", "Suite"],
     amenities: ["wifi", "pool", "gym", "restaurant", "parking"],
-    description: "Contemporary luxury hotel with modern amenities and sophisticated design.",
+    description:
+      "Contemporary luxury hotel with modern amenities and sophisticated design in the heart of Pune. This stylish property combines cutting-edge technology with personalized service, featuring elegantly appointed rooms with floor-to-ceiling windows and modern amenities. The hotel's innovative dining concepts offer diverse culinary experiences, from rooftop dining to specialty restaurants. The fitness center, spa services, and outdoor pool cater to wellness needs, while the central location provides easy access to Pune's business districts, shopping centers, and cultural attractions. The Conrad Concierge ensures every guest experience is tailored and memorable.",
     address: "Mangaldas Road, Pune, Maharashtra 411001",
     phone: "+91 20 6712 6712",
     email: "pune_reservations@conradhotels.com",
@@ -267,10 +333,13 @@ export const maharashtraHotels = [
     rating: 4,
     price: 6500,
     image: "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg",
-    images: ["https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg",
+    ],
     roomTypes: ["Deluxe", "Regency Club"],
     amenities: ["wifi", "pool", "gym", "restaurant", "parking"],
-    description: "Modern hotel offering comfortable accommodations in the IT corridor of Pune.",
+    description:
+      "Modern hotel offering comfortable accommodations in Pune's IT corridor with excellent connectivity and amenities. This contemporary property caters to both business and leisure travelers with spacious rooms featuring modern furnishings and technology. The hotel's multiple dining venues serve diverse cuisines, while the Regency Club offers exclusive privileges for discerning guests. The outdoor pool, fitness center, and spa services provide relaxation options. Located in the Hinjewadi IT park area, it's perfect for business travelers, while its proximity to entertainment and shopping areas appeals to leisure guests.",
     address: "Weikfield IT Citi Info Park, Pune, Maharashtra 411057",
     phone: "+91 20 6645 1234",
     email: "pune.regency@hyatt.com",
@@ -287,16 +356,23 @@ export const maharashtraHotels = [
     rating: 5,
     price: 12000,
     image: "https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg",
-    images: ["https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg", "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg",
+      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg",
+    ],
     roomTypes: ["Deluxe", "Club Level", "Suite"],
     amenities: ["wifi", "pool", "gym", "restaurant", "parking", "spa"],
-    description: "Ultra-luxury hotel offering legendary service and elegant accommodations.",
+    description:
+      "Ultra-luxury hotel offering legendary service and elegant accommodations with unparalleled attention to detail. This opulent property epitomizes luxury hospitality with meticulously designed rooms and suites featuring marble bathrooms, premium amenities, and personalized service. The hotel houses world-class restaurants helmed by renowned chefs, offering exceptional dining experiences. The Ritz-Carlton Spa provides bespoke wellness treatments, while the Club Level offers exclusive privileges and personalized service. Every aspect of the hotel reflects the brand's commitment to creating unforgettable experiences and memories that last a lifetime.",
     address: "Airport Road, Pune, Maharashtra 411006",
     phone: "+91 20 6788 8888",
     email: "ritz.pune@ritzcarlton.com",
     checkIn: "3:00 PM",
     checkOut: "12:00 PM",
-    policies: ["Ritz-Carlton service philosophy", "Club Level privileges available"],
+    policies: [
+      "Ritz-Carlton service philosophy",
+      "Club Level privileges available",
+    ],
     reviews: [],
   },
   {
@@ -307,10 +383,13 @@ export const maharashtraHotels = [
     rating: 3,
     price: 4200,
     image: "https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg",
-    images: ["https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg",
+    ],
     roomTypes: ["Standard", "Executive"],
     amenities: ["wifi", "restaurant", "parking"],
-    description: "Business hotel in the heart of Pune with convenient location and comfortable rooms.",
+    description:
+      "Business hotel in the heart of Pune with convenient location and comfortable accommodations at reasonable rates. This practical property offers well-appointed rooms with modern amenities, making it ideal for business travelers and budget-conscious visitors. Located in the prestigious Deccan Gymkhana area, guests have easy access to Pune's major business centers, educational institutions, and shopping areas. The hotel's restaurant serves delicious Indian and continental cuisine, while the central location allows for easy exploration of Pune's cultural attractions, including temples, museums, and parks.",
     address: "Deccan Gymkhana, Pune, Maharashtra 411004",
     phone: "+91 20 2553 7777",
     email: "reservations@deccanrendezvous.com",
@@ -329,10 +408,13 @@ export const maharashtraHotels = [
     rating: 4,
     price: 5500,
     image: "https://images.pexels.com/photos/3201761/pexels-photo-3201761.jpeg",
-    images: ["https://images.pexels.com/photos/3201761/pexels-photo-3201761.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/3201761/pexels-photo-3201761.jpeg",
+    ],
     roomTypes: ["Superior", "Business Class"],
     amenities: ["wifi", "pool", "gym", "restaurant", "parking"],
-    description: "Contemporary hotel in the heart of Nagpur with modern amenities and excellent service.",
+    description:
+      "Contemporary hotel in the heart of Nagpur with modern amenities and excellent service for business and leisure travelers. This stylish property features well-designed rooms with contemporary furnishings and state-of-the-art amenities. Located strategically in the city center, it provides easy access to Nagpur's business districts, shopping areas, and major attractions. The hotel's restaurants offer diverse dining options, while the fitness center, outdoor pool, and spa services ensure a comfortable stay. Being in the geographical center of India, it serves as an ideal base for exploring the region's wildlife sanctuaries and cultural sites.",
     address: "Wardha Road, Nagpur, Maharashtra 440025",
     phone: "+91 712 661 1111",
     email: "reservations.nagpur@radissonblu.com",
@@ -349,10 +431,13 @@ export const maharashtraHotels = [
     rating: 5,
     price: 7200,
     image: "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg",
-    images: ["https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg",
+    ],
     roomTypes: ["Classic", "Premium", "Suite"],
     amenities: ["wifi", "pool", "gym", "restaurant", "parking", "spa"],
-    description: "Sophisticated hotel offering European elegance with Indian hospitality.",
+    description:
+      "Sophisticated hotel offering European elegance with Indian hospitality in Nagpur's prime location. This elegant property combines contemporary design with cultural influences, featuring spacious rooms and suites with modern amenities and artistic touches. The hotel's culinary offerings include specialty restaurants and bars, providing diverse dining experiences. The LeMeridien Spa offers rejuvenating treatments, while the fitness center and outdoor pool cater to wellness needs. Its central location makes it convenient for business meetings and exploring Nagpur's attractions, including nearby national parks and historical sites.",
     address: "Wardha Road, Nagpur, Maharashtra 440015",
     phone: "+91 712 662 7777",
     email: "reservations.nagpur@lemeridien.com",
@@ -369,10 +454,13 @@ export const maharashtraHotels = [
     rating: 4,
     price: 4500,
     image: "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg",
-    images: ["https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg",
+    ],
     roomTypes: ["Deluxe", "Executive"],
     amenities: ["wifi", "restaurant", "gym", "parking"],
-    description: "Business hotel offering comfortable accommodations with traditional hospitality.",
+    description:
+      "Business hotel offering comfortable accommodations with traditional hospitality and modern conveniences in Nagpur's Civil Lines area. This established property combines classic charm with contemporary amenities, featuring well-appointed rooms with modern furnishings and essential business facilities. The hotel's restaurant serves authentic Indian and continental cuisine, while the central location in Civil Lines provides easy access to government offices, business centers, and shopping areas. The warm hospitality and personalized service make it a preferred choice for business travelers and government officials visiting Nagpur.",
     address: "Civil Lines, Nagpur, Maharashtra 440001",
     phone: "+91 712 252 5555",
     email: "reservations@tuliimperial.com",
@@ -389,10 +477,13 @@ export const maharashtraHotels = [
     rating: 3,
     price: 3200,
     image: "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg",
-    images: ["https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg",
+    ],
     roomTypes: ["Standard", "Deluxe"],
     amenities: ["wifi", "restaurant", "parking"],
-    description: "Budget-friendly hotel with basic amenities and good location in central Nagpur.",
+    description:
+      "Budget-friendly hotel with essential amenities and good location in central Nagpur, perfect for value-conscious travelers. This practical accommodation offers clean, comfortable rooms with basic modern amenities at affordable rates. Located in the bustling Sitabuldi area, guests have easy access to shopping markets, restaurants, and transportation hubs. The hotel's restaurant serves simple yet delicious Indian and continental dishes. The friendly staff provides helpful local information and assistance, making it an ideal choice for budget travelers, pilgrims visiting nearby religious sites, and business visitors seeking economical accommodation.",
     address: "Sitabuldi, Nagpur, Maharashtra 440012",
     phone: "+91 712 252 4444",
     email: "info@hotelhardeo.com",
@@ -411,10 +502,13 @@ export const maharashtraHotels = [
     rating: 4,
     price: 6800,
     image: "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg",
-    images: ["https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg",
+    ],
     roomTypes: ["Deluxe", "Club", "Suite"],
     amenities: ["wifi", "pool", "gym", "restaurant", "parking"],
-    description: "Premium hotel offering modern luxury with easy access to Ajanta and Ellora caves.",
+    description:
+      "Premium hotel offering modern luxury with easy access to the UNESCO World Heritage sites of Ajanta and Ellora caves. This contemporary property seamlessly blends modern comfort with local cultural elements, featuring elegantly designed rooms with modern amenities and artistic touches inspired by the region's rich heritage. The hotel's restaurants serve authentic Maharashtrian cuisine alongside international favorites. The outdoor pool, fitness center, and spa services provide relaxation after exploring the ancient caves. The hotel also arranges guided tours to historical sites and offers cultural experiences showcasing local traditions and crafts.",
     address: "Chikalthana, Aurangabad, Maharashtra 431210",
     phone: "+91 240 661 5555",
     email: "vivanta.aurangabad@tajhotels.com",
@@ -431,10 +525,13 @@ export const maharashtraHotels = [
     rating: 4,
     price: 5200,
     image: "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg",
-    images: ["https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg",
+    ],
     roomTypes: ["Superior", "Deluxe"],
     amenities: ["wifi", "restaurant", "gym", "parking"],
-    description: "Heritage hotel reflecting the grandeur of Mughal architecture with modern comforts.",
+    description:
+      "Heritage hotel reflecting the grandeur of Mughal architecture with modern comforts and warm hospitality. This distinctive property showcases Indo-Islamic architectural elements, featuring rooms decorated with traditional motifs and modern amenities. The hotel's design pays homage to Aurangabad's rich Mughal heritage, with courtyards, arches, and intricate details throughout. The restaurants serve royal Mughlai cuisine and regional specialties, while the location provides convenient access to Bibi Ka Maqbara, Daulatabad Fort, and other historical attractions. Cultural performances and heritage walks enhance the authentic experience of staying in this historic city.",
     address: "R-3, Chikalthana, Aurangabad, Maharashtra 431210",
     phone: "+91 240 660 3333",
     email: "reservations.aurangabad@itchotels.in",
@@ -451,10 +548,13 @@ export const maharashtraHotels = [
     rating: 3,
     price: 3800,
     image: "https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg",
-    images: ["https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg",
+    ],
     roomTypes: ["Standard", "Executive"],
     amenities: ["wifi", "restaurant", "parking"],
-    description: "Comfortable accommodation with traditional decor and warm hospitality.",
+    description:
+      "Comfortable accommodation with traditional decor and warm hospitality in the heart of Aurangabad. This family-run property offers a homely atmosphere with rooms featuring traditional Indian décor and modern conveniences. The hotel's restaurant specializes in authentic Maharashtrian cuisine and North Indian dishes, providing guests with a taste of local flavors. Located near the railway station and bus stand, it offers convenient access to transportation and major attractions. The friendly staff provides personalized service and local insights, helping guests explore Aurangabad's rich history, from ancient caves to Mughal monuments.",
     address: "Station Road, Aurangabad, Maharashtra 431005",
     phone: "+91 240 233 1121",
     email: "info@hotelpanchavati.com",
@@ -473,10 +573,13 @@ export const maharashtraHotels = [
     rating: 4,
     price: 4800,
     image: "https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg",
-    images: ["https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg",
+    ],
     roomTypes: ["Standard", "Executive"],
     amenities: ["wifi", "restaurant", "gym", "parking"],
-    description: "Modern business hotel in the wine capital of India with excellent connectivity.",
+    description:
+      "Modern business hotel in the wine capital of India with excellent connectivity and contemporary amenities. This well-appointed property caters to both business and leisure travelers visiting Nashik's growing wine region and religious sites. The hotel features comfortable rooms with modern furnishings and technology, while the restaurant serves diverse cuisines including local Maharashtrian specialties. Located on the Mumbai-Agra highway, it provides easy access to Nashik's famous vineyards, temples, and the Kumbh Mela grounds. The hotel also arranges wine tours and visits to nearby religious sites, making it perfect for spiritual and leisure tourism.",
     address: "Mumbai Agra Road, Nashik, Maharashtra 422001",
     phone: "+91 253 661 3333",
     email: "reservations@expressinnnashik.com",
@@ -493,10 +596,13 @@ export const maharashtraHotels = [
     rating: 3,
     price: 3200,
     image: "https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg",
-    images: ["https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg",
+    ],
     roomTypes: ["Standard", "Deluxe"],
     amenities: ["wifi", "restaurant", "parking"],
-    description: "Comfortable stay near religious sites with vegetarian dining options.",
+    description:
+      "Comfortable stay near religious sites with vegetarian dining options and spiritual ambiance perfect for pilgrims. This pilgrim-friendly property offers clean, simple accommodations with a focus on spiritual comfort and traditional values. All rooms are designed with simplicity and cleanliness in mind, while the pure vegetarian restaurant serves sattvic meals and regional specialties. Located near the sacred Trimbakeshwar Temple and other religious sites, it's ideal for devotees and spiritual seekers. The hotel provides assistance with temple visits, religious ceremonies, and local pilgrimage tours, ensuring a meaningful spiritual journey.",
     address: "Trimbak Road, Nashik, Maharashtra 422005",
     phone: "+91 253 257 7777",
     email: "info@panchvatiyatri.com",
@@ -513,10 +619,13 @@ export const maharashtraHotels = [
     rating: 3,
     price: 4200,
     image: "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg",
-    images: ["https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg",
+    ],
     roomTypes: ["Smart Room"],
     amenities: ["wifi", "restaurant", "gym"],
-    description: "Smart lean luxe hotel offering modern amenities at value pricing.",
+    description:
+      "Smart lean luxe hotel offering modern amenities at value pricing with efficient service and contemporary design. This innovative property redefines budget hospitality with smart, well-designed rooms featuring modern amenities and technology. The hotel's efficient service model ensures comfort without compromising on quality, while the contemporary design creates a fresh, vibrant atmosphere. The restaurant serves healthy, flavorful cuisine, and the fitness center helps guests maintain their wellness routine. Located strategically for easy access to Nashik's business areas, wine country, and religious sites, it's perfect for modern travelers seeking value and convenience.",
     address: "Mumbai Agra Highway, Nashik, Maharashtra 422001",
     phone: "+91 253 662 3456",
     email: "nashik@gingerhotels.com",
@@ -535,10 +644,13 @@ export const maharashtraHotels = [
     rating: 3,
     price: 3500,
     image: "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg",
-    images: ["https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg",
+    ],
     roomTypes: ["Standard", "Deluxe"],
     amenities: ["wifi", "restaurant", "parking"],
-    description: "Traditional hotel offering comfortable stay with authentic Kolhapuri hospitality.",
+    description:
+      "Traditional hotel offering comfortable stay with authentic Kolhapuri hospitality and cultural experiences. This heritage property showcases the rich culture and traditions of Kolhapur, featuring rooms decorated with local artifacts and traditional motifs. The hotel's restaurant specializes in authentic Kolhapuri cuisine, famous for its spicy flavors and unique preparations. Located near the historic Mahalaxmi Temple and other cultural attractions, guests can easily explore the city's royal heritage, traditional crafts, and wrestling culture. The warm hospitality and cultural programs provide an immersive experience of Kolhapur's vibrant traditions and customs.",
     address: "Station Road, Kolhapur, Maharashtra 416001",
     phone: "+91 231 265 2222",
     email: "reservations@vrundavanhotel.com",
@@ -555,10 +667,13 @@ export const maharashtraHotels = [
     rating: 4,
     price: 4500,
     image: "https://images.pexels.com/photos/3201761/pexels-photo-3201761.jpeg",
-    images: ["https://images.pexels.com/photos/3201761/pexels-photo-3201761.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/3201761/pexels-photo-3201761.jpeg",
+    ],
     roomTypes: ["Deluxe", "Executive"],
     amenities: ["wifi", "restaurant", "gym", "parking"],
-    description: "Premium hotel with modern amenities and excellent location in heart of Kolhapur.",
+    description:
+      "Premium hotel with modern amenities and excellent location in the heart of Kolhapur's business district. This contemporary property combines modern comfort with local charm, featuring well-appointed rooms with modern amenities and elegant furnishings. The hotel's multi-cuisine restaurant serves both traditional Kolhapuri delicacies and international dishes, while the central location provides easy access to business centers, shopping areas, and tourist attractions. The fitness center and business facilities cater to corporate travelers, while the proximity to historical sites and cultural venues makes it ideal for leisure guests exploring Kolhapur's rich heritage.",
     address: "Udyog Bhavan Road, Kolhapur, Maharashtra 416003",
     phone: "+91 231 265 4444",
     email: "info@shalimarkolhapur.com",
@@ -577,10 +692,13 @@ export const maharashtraHotels = [
     rating: 3,
     price: 2800,
     image: "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg",
-    images: ["https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg",
+    ],
     roomTypes: ["Standard", "Cottage"],
     amenities: ["wifi", "restaurant", "parking"],
-    description: "Government-run resort offering peaceful stay amidst nature's beauty.",
+    description:
+      "Government-run resort offering peaceful stay amidst nature's beauty with eco-friendly practices and scenic surroundings. This serene property is nestled in the picturesque Western Ghats, providing a perfect retreat for nature lovers and those seeking tranquility. The resort features comfortable rooms and cottages with basic amenities, while the restaurant serves simple, wholesome meals using local ingredients. The eco-friendly approach includes rainwater harvesting, solar energy, and organic gardening. Guests can enjoy nature walks, bird watching, and visits to nearby forts and waterfalls, making it an ideal base for exploring Satara's natural and historical attractions.",
     address: "Satara-Lonand Road, Satara, Maharashtra 415001",
     phone: "+91 2162 234 567",
     email: "satara@maharashtratourism.gov.in",
@@ -597,10 +715,13 @@ export const maharashtraHotels = [
     rating: 3,
     price: 3200,
     image: "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg",
-    images: ["https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg",
+    ],
     roomTypes: ["Standard", "Deluxe"],
     amenities: ["wifi", "restaurant", "parking"],
-    description: "Comfortable hotel with scenic mountain views and warm Marathi hospitality.",
+    description:
+      "Comfortable hotel with scenic mountain views and warm Marathi hospitality in the heart of Satara district. This welcoming property offers rooms with beautiful views of the surrounding hills and valleys, providing a peaceful retreat for travelers. The hotel's restaurant serves authentic Maharashtrian cuisine alongside popular Indian and continental dishes, giving guests a taste of local flavors. Located on the Pune-Bangalore highway, it serves as an excellent stopover for road travelers and a base for exploring Satara's numerous forts, temples, and natural attractions. The friendly staff provides assistance with trekking arrangements and local sightseeing.",
     address: "Pune-Bangalore Highway, Satara, Maharashtra 415001",
     phone: "+91 2162 234 888",
     email: "info@hotelrajgad.com",
@@ -620,16 +741,31 @@ export const maharashtraHotels = [
     price: 8500,
     originalPrice: 10000,
     image: "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg",
-    images: ["https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg", "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg",
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg",
+    ],
     roomTypes: ["Villa", "Suite"],
-    amenities: ["wifi", "pool", "gym", "restaurant", "parking", "spa", "adventure"],
-    description: "Luxury resort offering adventure activities and premium accommodations in the hills.",
+    amenities: [
+      "wifi",
+      "pool",
+      "gym",
+      "restaurant",
+      "parking",
+      "spa",
+      "adventure",
+    ],
+    description:
+      "Luxury resort offering adventure activities and premium accommodations in the scenic hills of Lonavala. This expansive property combines luxury hospitality with thrilling adventure experiences, featuring elegantly designed villas and suites with modern amenities and stunning valley views. The resort houses India's longest flying fox, ATV rides, rock climbing, and numerous other adventure activities. Multiple restaurants serve diverse cuisines, while the spa offers rejuvenating treatments. The outdoor pools, fitness center, and recreational facilities ensure entertainment for all ages. Set amidst lush greenery with panoramic views, it's perfect for weekend getaways, corporate retreats, and adventure enthusiasts.",
     address: "Kunegaon, Lonavala, Maharashtra  410401",
     phone: "+91 2114 301 500",
     email: "reservations@dellaresorts.com",
     checkIn: "3:00 PM",
     checkOut: "11:00 AM",
-    policies: ["Adventure activity packages", "All-inclusive options available"],
+    policies: [
+      "Adventure activity packages",
+      "All-inclusive options available",
+    ],
     discount: 15,
     reviews: [],
   },
@@ -641,10 +777,13 @@ export const maharashtraHotels = [
     rating: 4,
     price: 6800,
     image: "https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg",
-    images: ["https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg"],
+    images: [
+      "https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg",
+    ],
     roomTypes: ["Deluxe", "Premium"],
     amenities: ["wifi", "pool", "restaurant", "parking", "spa"],
-    description: "Hill station resort with spectacular valley views and serene environment.",
+    description:
+      "Hill station resort with spectacular valley views and serene environment perfect for relaxation and rejuvenation. This tranquil property is perched on the hills of Khandala, offering breathtaking views of the Sahyadri mountains and lush valleys. The resort features comfortable rooms and suites with private balconies showcasing panoramic vistas. The multi-cuisine restaurant serves delicious meals with a view, while the spa offers traditional and contemporary treatments. The infinity pool seems to merge with the horizon, creating a magical experience. During monsoons, the resort transforms into a green paradise with cascading waterfalls and misty landscapes, making it a perfect romantic getaway.",
     address: "Khandala, Lonavala, Maharashtra 410301",
     phone: "+91 2114 273 000",
     email: "reservations@thedukesretreat.com",
@@ -653,17 +792,19 @@ export const maharashtraHotels = [
     policies: ["Hill station packages", "Monsoon special rates"],
     reviews: [],
   },
-]
+];
 
 export const getHotelsByCity = (city) => {
-  return maharashtraHotels.filter((hotel) => hotel.city.toLowerCase() === city.toLowerCase())
-}
+  return maharashtraHotels.filter(
+    (hotel) => hotel.city.toLowerCase() === city.toLowerCase()
+  );
+};
 
 export const getHotelById = (id) => {
-  return maharashtraHotels.find((hotel) => hotel.id === Number.parseInt(id))
-}
+  return maharashtraHotels.find((hotel) => hotel.id === Number.parseInt(id));
+};
 
 export const getAllCities = () => {
-  const cities = [...new Set(maharashtraHotels.map((hotel) => hotel.city))]
-  return cities.sort()
-}
+  const cities = [...new Set(maharashtraHotels.map((hotel) => hotel.city))];
+  return cities.sort();
+};
